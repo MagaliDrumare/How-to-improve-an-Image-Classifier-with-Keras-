@@ -37,6 +37,14 @@ Il s'agit de désativer un % de neurones du réseau au hasard à chacune des it�
 -Understanding Dropout : https://youtu.be/3gWFv_W1GVc (by Andrew Ng)
 
 ```
-DROPOUT = 0.3 (30% des neurones seront activés arbitrairement/ si DROPOUT=1, 100% des neurones sont activés)
+DROPOUT =0.3 (30% des neurones sont activés arbitrairement. Lorsque DROPOUT =1, il n'y a pas de désactivation)
 model = Sequential()
-model.add(Dense(N_HIDDEN, input_shape=(RESHAPE
+model.add(Dense(N_HIDDEN, input_shape=(RESHAPED,)))
+model.add(Activation('relu'))
+model.add(Dropout(DROPOUT))
+model.add(Dense(N_HIDDEN))
+model.add(Activation('relu'))
+model.add(Dropout(DROPOUT))
+```
+
+
