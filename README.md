@@ -1,10 +1,10 @@
 
 # A voir et à Savoir : 
-#### Keras est une API écrite en python qui tourne sur tensorflow. Une boîte à outils pour le "deep learning" qui permet de réduire la compléxité des algorithmes et rendre la discipline plus accessible. 
+### Keras est une API écrite en python qui tourne sur tensorflow. Une boîte à outils pour le "deep learning" qui permet de réduire la compléxité des algorithmes et rendre la discipline plus accessible. 
 * Keras website : API, written in Python and capable of running on top of TensorFlow http://keras.io
 * The Keras workflow, expanded (TensorFlow Dev Summit 2017), François Cholet: https://youtu.be/UeheTiBJ0Io
 
-#### Comment améliorer un simple Neural Network avec Keras? 
+### Comment améliorer un simple Neural Network avec Keras? 
 
 #### Première version du modèle avec un seul hidden layer 
 
