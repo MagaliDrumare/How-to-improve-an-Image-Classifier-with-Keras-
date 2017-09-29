@@ -6,7 +6,7 @@
 
 #### Comment améliorer un simple Neural Network avec Keras? 
 
-##### Première version du modèle avec un seul hidden layer 
+#### Première version du modèle avec un seul hidden layer 
 
 ```
 model = Sequential()
@@ -16,7 +16,7 @@ model.add(Activation('softmax'))
 model.summary()
 ````
 
-##### Modifier la structure: augmenter la taille du réseau de neurones en ajoutant des 'Hidden Layer'. Les layers sont appelés "cachés" car ils ne sont pas connectés directement aux inputs ni aux outputs. 
+#### Modifier la structure: augmenter la taille du réseau de neurones en ajoutant des 'Hidden Layer'. Les layers sont appelés "cachés" car ils ne sont pas connectés directement aux inputs ni aux outputs. 
 
 ```
 model = Sequential()
@@ -31,7 +31,7 @@ model.summary()
 Amélioration = an additional 2.2% accuracy on the test
 ```
 
-##### Technique de régularisation du Dropout : 
+#### Technique de régularisation du Dropout : 
 - Le Dropout est une technique de régularisation pour lutter contre le surapprentissage (overfitting). 
 Il s'agit de désativer un % de neurones du réseau au hasard à chacune des itérations.
 - Understanding Dropout : https://youtu.be/3gWFv_W1GVc (by Andrew Ng)
@@ -46,7 +46,7 @@ model.add(Dense(N_HIDDEN))
 model.add(Activation('relu'))
 model.add(Dropout(DROPOUT))
 ```
-##### Choisir la bonne méthode d'optimisation (Optimizers) : 
+#### Choisir la bonne méthode d'optimisation (Optimizers) : 
 - Keras permet d'implémenter au choix trois optimizers différents : SDG (stochastic gradient descent); RMSProp et Adam.
 - The Evolution of Gradient Descent : https://youtu.be/nhqo0u1a6fw (by Siraj Raval)
 
@@ -56,7 +56,7 @@ model.add(Dropout(DROPOUT))
 # Adam : OPTIMIZER = Adam()
 ```
 
-##### Autres méthodes d'amélioration : modifier les Hyper-paramètres (hyperparameters)
+#### Autres méthodes d'amélioration : modifier les Hyper-paramètres (hyperparameters)
 - NB_EPOCH : Augmenter le nombre d'épochs (augmenter le temps de computation) 
 - Modifier le learning rate (0.1, 0.01, 0.001, O.0001) 
 - N_HIDDEN : Augmenter le nombre de neurones des "Hidden Layer" (128,256,512,1024)
