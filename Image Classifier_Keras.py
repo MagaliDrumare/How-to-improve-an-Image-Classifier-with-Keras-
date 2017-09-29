@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+Credit : Deep Learning with Keras, by Antonio Gulli; Sujit Pal
 Created on Fri Sep 29 11:07:10 2017
-
 @author: magalidrumare
 """
 
