@@ -25,8 +25,28 @@ model.add(Activation('relu'))
 model.add(Dense(NB_CLASSES))
 model.add(Activation('softmax'))
 model.summary()
+
+Amélioration = an additional 2.2% accuracy on the test
+
+* Technique du Dropout : le Dropout est une technique de régularisation pour lutter contre le surapprentissage (overfitting). 
+Il s'agit de désativer un % de neurones du réseau au hasard à chacune des itérations.
+
+```
+DROPOUT = 0.3 (30% des neurones seront désactivés arbitrairement)
+model = Sequential()
+model.add(Dense(N_HIDDEN, input_shape=(RESHAPED,)))
+model.add(Activation('relu'))
+model.add(Dropout(DROPOUT))
+model.add(Dense(N_HIDDEN))
+model.add(Activation('relu'))
+model.add(Dropout(DROPOUT))
+model.add(Dense(NB_CLASSES))
+model.add(Activation('softmax'))
+model.summary()
 ```
 
-* 
+* Modifier l'algorithm d'optimisation (Optimizer) 
+
+
 
 
