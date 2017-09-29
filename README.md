@@ -58,7 +58,7 @@ model.add(Dropout(DROPOUT))
 
 #### Autres méthodes d'amélioration : modifier les Hyper-paramètres (hyperparameters)
 - NB_EPOCH : Augmenter le nombre d'épochs (augmenter le temps de computation) 
-- Modifier le learning rate (0.1, 0.01, 0.001, O.0001) 
+- Modifier le learning rate (0.1, 0.01, 0.001, 0.0001) 
 - N_HIDDEN : Augmenter le nombre de neurones des "Hidden Layer" (128,256,512,1024)
 - BATCH_SIZE = 128 : Changer la taille du l'échantillon Batch_size (32,64,128,256,512)
 
