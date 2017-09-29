@@ -4,6 +4,9 @@
 * Keras website : API, written in Python and capable of running on top of TensorFlow http://keras.io
 * The Keras workflow, expanded (TensorFlow Dev Summit 2017), François Cholet: https://youtu.be/UeheTiBJ0Io
 
+
+
+
 > Comment améliorer un simple Neural Network avec Keras? 
 
 #### Première version du modèle avec un seul hidden layer 
