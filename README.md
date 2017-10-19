@@ -11,7 +11,7 @@
 
 #### Première version du modèle avec un seul hidden layer 
 
-```
+```python
 model = Sequential()
 model.add(Dense(N_HIDDEN, input_shape=(RESHAPED,)))
 model.add(Dense(NB_CLASSES))
@@ -21,7 +21,7 @@ model.summary()
 
 #### Modifier la structure: augmenter la taille du réseau de neurones en ajoutant des 'Hidden Layer'. Les layers sont appelés "cachés" car ils ne sont pas connectés directement aux inputs ni aux outputs. 
 
-```
+```python
 model = Sequential()
 model.add(Dense(N_HIDDEN, input_shape=(RESHAPED,)))
 model.add(Activation('relu'))
@@ -39,7 +39,7 @@ Amélioration = an additional 2.2% accuracy on the test
 Il s'agit de désativer un % de neurones du réseau au hasard à chacune des itérations.
 - Understanding Dropout : https://youtu.be/3gWFv_W1GVc (by Andrew Ng)
 
-```
+```python
 DROPOUT =0.3 (30% des neurones sont activés arbitrairement. Lorsque DROPOUT =1, il n'y a pas de désactivation)
 model = Sequential()
 model.add(Dense(N_HIDDEN, input_shape=(RESHAPED,)))
@@ -53,7 +53,7 @@ model.add(Dropout(DROPOUT))
 - Keras permet d'implémenter au choix trois optimizers différents : SDG (stochastic gradient descent); RMSProp et Adam.
 - The Evolution of Gradient Descent : https://youtu.be/nhqo0u1a6fw (by Siraj Raval)
 
-```
+```python
 # Stochatic Gradient Descent: OPTIMIZER = SGD()
 # RMS : OPTIMIZER = RMSprop()
 # Adam : OPTIMIZER = Adam()
